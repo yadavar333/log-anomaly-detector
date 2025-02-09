@@ -1,0 +1,7 @@
+{
+  "brute_force_threshold":   10,
+  "flood_404_threshold":     20,
+  "crawler_threshold":       50,
+  "upload_threshold_bytes":  10485760,
+  "off_hours":               [23, 0, 1, 2, 3, 4, 5]
+}
