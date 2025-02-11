@@ -37,9 +37,10 @@ def print_report(alerts: List[Alert], use_colour: bool = True) -> None:
     print(c('BOLD', '  LOG ANOMALY REPORT'))
     print(c('BOLD', '═' * 60))
     print(f"  Total alerts : {len(alerts)}")
-    print(f"  {c('HIGH', f'HIGH   : {counts[\"HIGH\"]}')}")
-    print(f"  {c('MEDIUM', f'MEDIUM : {counts[\"MEDIUM\"]}')}")
-    print(f"  {c('LOW', f'LOW    : {counts[\"LOW\"]}')}")
+    h, m, l = counts['HIGH'], counts['MEDIUM'], counts['LOW']
+    print(f"  {c('HIGH',   f'HIGH   : {h}')}")
+    print(f"  {c('MEDIUM', f'MEDIUM : {m}')}")
+    print(f"  {c('LOW',    f'LOW    : {l}')}")
     print(c('BOLD', '─' * 60))
     print()
 
